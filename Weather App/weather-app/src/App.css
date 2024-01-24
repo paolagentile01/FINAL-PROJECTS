@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter' !important;
+}
+
+
+body {
+  height: 100%; 
+  color: rgb(255, 255, 255)!important;
+  background:#292D50  !important;
+  backdrop-filter: blur(5px)!important;
+  -webkit-backdrop-filter: blur(5px)!important;
+}
+
+.app{
+  padding: 30px;
+}
+.app input, .app input[type="text"]:focus{
+  background-color: #18162d;
+  border:none;
+  color: white ;
+}
+
+.app input::placeholder{
+ color: rgba(255, 255, 255, 0.527);
+}
+
+.card-container {
+  min-height: 200px;
+  width: auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 10px;
+}
+
+.card-search-section{
+  background: linear-gradient(to right, #5433b1, #372A86)!important;
+  height: 210px !important;
+  position: relative;
+}
+
+.search-btn{
+  position: absolute;
+  right:0%;
+  top: 0%;
+  padding: 5px 16px !important;
+  margin-bottom: 50px !important;
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+}
+.form{
+  position:relative;
+}
+
+.card-transparent{
+  width: 210px;
+  height: 220px !important;
+  margin: 0 auto ;
+  cursor: pointer;
+  background:inherit!important;
+}
+
+.card-transparent:hover{
+  background-color: #59488f !important;
+}
+
+.bg-glassy::before{
+  background:inherit!important;
+}
+.bg-glassy{
+  background:rgba(255, 255, 255, 0.068) !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.183);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+/* .change-background{
+  background: url('./assets/stars.gif')  !important;
+  background-repeat: no-repeat;
+  width: 100% !important;
+}
+ */
+.change-background{
+  background: url('https://i.pinimg.com/564x/56/77/30/567730c4a829f90603a416f6107b3bf8.jpg')  !important;
+  background-repeat: no-repeat;
+  width: 100% !important;
+  background-size: cover !important;
+}
+
+
+ input[type="range"] {
+  -webkit-appearance: none;
+  height: 8px;
+  margin: 0;
+  padding: 0;
+  border-radius: 5px;
+}
+
+.temperature-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
+} 
+
+.air-range{
+  background: linear-gradient(to right,#1ebc38, #c5c02c,#c5922c, #c5432c )!important;
+}
+
+.air-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  width: 14px !important;
+  height: 14px !important;
+}
+.temperature-range{
+  background: linear-gradient(to right,#1e72bc, #2cc5c5,#aec52c, #c5432c );
+  opacity: 0.8;
+}
+
