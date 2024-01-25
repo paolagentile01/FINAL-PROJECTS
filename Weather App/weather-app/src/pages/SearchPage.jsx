@@ -6,31 +6,19 @@ import { fetchDataSearch } from "../actions/fetchDataActions";
 
 
 function RenderSearchPage(){
-
+// inputUser is the data submitted by the  user
     const [inputUser,setInputUser] = useState("");
     const dispatch = useDispatch();
-      
-    const checkValidity = (value) => {
-      if( value === ''){
-        return false;
-      }else {
-        return true;
-      }
-    }
 
 
+      // Function that handle form submission and dispatches actions accordingly
     const submitInput = () => {
-      const check = checkValidity(inputUser);
-      if (check){
         setInputUser(inputUser);
         dispatch(fetchDataSearch(inputUser));
         return setInputUser("");
-      } else{
-        return alert("Please enter a valid location.");
-      }
     }
   
-
+  // JSX that renders both SEARCH BAR and CITY CARDS
     return(
       <Container className='app'>
         <h4 className=" mx-4" style={{fontSize:"30px", fontWeight:"300"}}>Check the Weather</h4>
@@ -45,18 +33,18 @@ function RenderSearchPage(){
                 value={inputUser}
                 onChange={(e) => setInputUser(e.target.value)}
                 onKeyDown={(e) => {
-                  if (e.key === 'Enter') { // Check if the pressed key is Enter 
+                  if (e.key === 'Enter') { //   onKeyDown checks if the pressed key is 'Enter'
                     e.preventDefault();
                     submitInput(); 
                     setInputUser("");
                   }
                 }}
               />
-            {inputUser.length > 0 && (
+{/*             {inputUser.length > 0 && (
               <Dropdown className="bg-light text-dark rounded-bottom-5 p-3">
                 <Dropdown.Item href="#/action-1" className="mb-2">Action</Dropdown.Item>
               </Dropdown>
-            )}
+            )} */}
             </Col>
             <div>
              <Button type="button" className="d-none d-lg-block btn-dark search-btn " onClick={submitInput} >

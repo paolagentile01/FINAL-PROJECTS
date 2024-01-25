@@ -77,18 +77,18 @@ body {
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 }
-/* .change-background{
+.change-background{
   background: url('./assets/stars.gif')  !important;
   background-repeat: no-repeat;
   width: 100% !important;
 }
- */
-.change-background{
+ 
+/* .change-background{
   background: url('https://i.pinimg.com/564x/56/77/30/567730c4a829f90603a416f6107b3bf8.jpg')  !important;
   background-repeat: no-repeat;
   width: 100% !important;
   background-size: cover !important;
-}
+} */
 
 
  input[type="range"] {
@@ -125,4 +125,11 @@ body {
   background: linear-gradient(to right,#1e72bc, #2cc5c5,#aec52c, #c5432c );
   opacity: 0.8;
 }
+
+.custom-border-opacity{
+  border-bottom: 1px solid rgb(255, 255, 255, 0.5);
+}
+
+
+
 
