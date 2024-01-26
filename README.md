@@ -1,6 +1,6 @@
 # FINAL-PROJECTS
 In this personal project, I created a Weather App fully responsive with the use of React, Redux, and Bootstrap. Then I used API to make the pages dynamic.
-video
+
 
 
 
